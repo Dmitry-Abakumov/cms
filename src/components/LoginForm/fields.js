@@ -4,14 +4,16 @@ const fields = {
     name: "email",
     placeholder: "email",
     type: "email",
-    id: "email",
+    id: "emailId",
+    autoComplete: "on",
   },
   password: {
     label: "password",
     name: "password",
     placeholder: "password",
     type: "password",
-    id: "password",
+    id: "passwordId",
+    autoComplete: "on",
   },
 };
 

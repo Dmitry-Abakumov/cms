@@ -11,8 +11,8 @@ const RegisterForm = () => {
   return (
     <form className={css.form}>
       <div className={css.textFieldWrap}>
-        <label htmlFor="email" className={css.label}>
-          email
+        <label htmlFor="loginId" className={css.label}>
+          login
         </label>
         <div className={css.inputIconWrap}>
           <input {...fields.login} className={css.input} />
@@ -21,7 +21,7 @@ const RegisterForm = () => {
       </div>
 
       <div className={css.textFieldWrap}>
-        <label htmlFor="email" className={css.label}>
+        <label htmlFor="emailId" className={css.label}>
           email
         </label>
         <div className={css.inputIconWrap}>
@@ -31,7 +31,7 @@ const RegisterForm = () => {
       </div>
 
       <div className={css.textFieldWrap}>
-        <label htmlFor="password" className={css.label}>
+        <label htmlFor="passwordId" className={css.label}>
           password
         </label>
         <div className={css.inputIconWrap}>
