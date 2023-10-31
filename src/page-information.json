@@ -1,0 +1,20 @@
+[
+  {
+    "id": "loginPage",
+    "title": "Login",
+    "order": 1,
+    "path": "pages/LoginPage"
+  },
+  {
+    "id": "registerPage",
+    "title": "Register",
+    "order": 2,
+    "path": "pages/RegisterPage"
+  },
+  {
+    "id": "homePage",
+    "title": "Home",
+    "order": 0,
+    "path": "pages/HomePage"
+  }
+]
