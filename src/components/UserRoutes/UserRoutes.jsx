@@ -1,6 +1,8 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
+import { TailSpin } from "react-loader-spinner";
+
 import Redirect from "../Redirect";
 
 const UserRoutes = ({ pageInformation }) => {
@@ -13,7 +15,22 @@ const UserRoutes = ({ pageInformation }) => {
   const firstRoute = pageInformation.find(({ order }) => order === 0).id;
 
   return (
-    <Suspense fallback={<p>Loading...</p>}>
+    <Suspense
+      fallback={
+        <div className="spinnerWrap">
+          <TailSpin
+            height="80"
+            width="80"
+            color="#2a303c"
+            ariaLabel="tail-spin-loading"
+            radius="1"
+            wrapperStyle={{ marginRight: "auto", marginLeft: "auto" }}
+            wrapperClass=".spinner"
+            visible={true}
+          />
+        </div>
+      }
+    >
       <Routes>
         <Route path="/" element={<Redirect firstRoute={firstRoute} />} />
         {routes}
