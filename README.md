@@ -1,4 +1,4 @@
-Hello. This is the cms (Content management system) application.
+Hello. This is the CMS (Content management system) application.
 
 With it you can create pages by configuration in the file - page-information.json.
 
