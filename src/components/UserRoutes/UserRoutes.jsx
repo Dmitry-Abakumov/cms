@@ -12,8 +12,6 @@ const UserRoutes = ({ pageInformation }) => {
 
   const firstRoute = pageInformation.find(({ order }) => order === 0).id;
 
-  console.log(firstRoute);
-
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <Routes>
