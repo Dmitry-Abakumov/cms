@@ -7,12 +7,12 @@ import pageInformation from "./page-information.json";
 import "./index.css";
 import App from "./App";
 
-const baseName = `/${pageInformation.find(({ order }) => order === 0).path}`;
+// const baseName = `/${pageInformation.find(({ order }) => order === 0).path}`;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={baseName}>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
