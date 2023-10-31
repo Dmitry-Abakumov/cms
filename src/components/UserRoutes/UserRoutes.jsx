@@ -1,8 +1,9 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
+import Redirect from "../Redirect";
+
 const UserRoutes = ({ pageInformation }) => {
-  const navigate = useNavigate();
   const routes = pageInformation.map(({ id, path }) => {
     const Component = lazy(() => import(`../../${path}`));
 
@@ -16,8 +17,7 @@ const UserRoutes = ({ pageInformation }) => {
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <Routes>
-        {/* <Route exact path="/" render={() => navigate(`/${firstRoute}`)} /> */}
-        <Route path="/" element={<p>First component</p>} />
+        <Route path="/" element={<Redirect firstRoute={firstRoute} />} />
         {routes}
       </Routes>
     </Suspense>
