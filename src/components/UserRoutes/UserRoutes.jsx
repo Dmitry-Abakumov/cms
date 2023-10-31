@@ -17,7 +17,7 @@ const UserRoutes = ({ pageInformation }) => {
     <Suspense fallback={<p>Loading...</p>}>
       <Routes>
         {/* <Route exact path="/" render={() => navigate(`/${firstRoute}`)} /> */}
-        <Route exact path="/" component={<p>First component</p>} />
+        <Route exact path="/" element={<p>First component</p>} />
         {routes}
       </Routes>
     </Suspense>
