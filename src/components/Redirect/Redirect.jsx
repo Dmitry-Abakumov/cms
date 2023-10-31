@@ -6,6 +6,8 @@ const Redirect = ({ firstRoute }) => {
   useEffect(() => {
     navigate(`/${firstRoute}`);
   }, [navigate, firstRoute]);
+
+  return <></>;
 };
 
 export default Redirect;
